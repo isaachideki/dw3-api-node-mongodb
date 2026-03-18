@@ -4,8 +4,9 @@ import mongoose from "mongoose";
 import gameRoutes from "./routes/gameRoutes.js";
 const app = express();
 //Importando o model
-
 import Game from "./models/Games.js"
+// Importando o model de usuarios
+import User from "./models/Users.js"
 // Configurações do Express
 app.use(express.json()) // Permite o uso do json na aplicação
 app.use("/", gameRoutes)
