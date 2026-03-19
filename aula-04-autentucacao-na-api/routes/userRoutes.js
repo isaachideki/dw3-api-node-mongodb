@@ -8,4 +8,7 @@ import { model } from 'mongoose';
 //Endpoint para  CADASTRAR um usuario
 userRoutes.post("/user", userController.createUser)
 
+//endpoint para logar um usuario
+userRoutes.post("/auth", userController)
+
 export default userRoutes
